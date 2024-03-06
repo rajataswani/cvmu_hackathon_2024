@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+
+</head>
+<body class="font-inter bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">DFD</div>
+            <div class="flex space-x-4">
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#technology" class="hover:text-gray-300">Technology</a>
+                <a href="#upload" class="hover:text-gray-300">Upload</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Deepfake Detection</h1>
+            <p class="text-lg md:text-xl mb-8">Empowering AI to Safeguard Authenticity</p>
+            <a href="#upload" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300">See the Action</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto flex items-center">
+            <div class="w-1/2">
+                <video src="/static/video1.mp4" alt="Deepfake Video" class="rounded-lg shadow-lg" controls>
+            </div>
+            <div class="w-1/2 px-8">
+                <h2 class="text-3xl font-bold mb-4">What are DeepFakes?</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Deepfakes are synthetic media generated through deep learning techniques, combining and superimposing images and videos. They raise concerns about misinformation and the need for advanced detection methods.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="bg-gray-200 py-16">
+        <div class="container mx-auto flex items-center">
+            <div class="w-1/2 px-8">
+                <h2 class="text-3xl font-bold mb-4">Technology Stack for Deepfake Detection</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Our deepfake detection system leverages a powerful technology stack, including Flask for the backend API and TensorFlow for the detection algorithm. This ensures efficient analysis and identification of patterns within media content.
+                </p>
+            </div>
+            <div class="w-1/2">
+                <img src="/static/flowchart.jpg" alt="Workflow Flowchart" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+<!-- Upload Section -->
+<section id="upload" class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Try uploading a deepfake video!</h2>
+        <p class="text-gray-700 leading-relaxed mb-8">Experience the power of our deepfake detection system by uploading a video for analysis.</p>
+        <center>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="video" class="text-gray-700">Choose a video file:</label>
+            <input type="file" id="video" name="video" accept="video/*" class="block border border-gray-300 p-2 rounded mt-2">
+            <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300 mt-4">Upload Video</button>
+        </form>
+    </center>
+    </div>
+</section>
+
+
+    <!-- Participants Section -->
+    <section class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">Team Members</h3>
+            <div class="flex flex-wrap justify-center">
+                <div class="m-4 p-4 bg-gray-700 rounded-lg shadow-md">
+                    <p class="text-lg font-bold">Deepam Makwana</p>
+                </div>
+                <div class="m-4 p-4 bg-gray-700 rounded-lg shadow-md">
+                    <p class="text-lg font-bold">Rajat Aswani</p>
+                </div>
+                <div class="m-4 p-4 bg-gray-700 rounded-lg shadow-md">
+                    <p class="text-lg font-bold">Yash Singh</p>
+                </div>
+                <div class="m-4 p-4 bg-gray-700 rounded-lg shadow-md">
+                    <p class="text-lg font-bold">Utkarsh Barad</p>
+                </div>
+            </div>
+            <p class="text-gray-400 mt-2">Silver Oak University, Ahmedabad</p>
+            <p class="text-gray-400">Project created during Hackathon 1.0</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">2023 Deepfake Detection. MIT License.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

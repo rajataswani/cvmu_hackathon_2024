@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection Results</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+</head>
+<body class="font-inter bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">DFD</div>
+            <div class="flex space-x-4">
+                <a href="/" class="hover:text-gray-300">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Results Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Deepfake Detection Results</h2>
+            <p class="text-gray-700 leading-relaxed mb-8">The uploaded video is determined to be <span class="font-bold">{{ result }}</span>.</p>
+            <a href="/" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">2023 Deepfake Detection. MIT License.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
